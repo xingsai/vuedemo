@@ -8,18 +8,7 @@ const pageMap = {
 var scrollTimer = null
 
 var page = {
-  // 切换页面，并错误提示
-  turnPage: (message, url) => {
-    if (message) {
-      alert(message)
-    }
-    if (url) {
-      if (pageMap[url]) {
-        url = pageMap[url]
-      }
-      window.location.href = url
-    }
-  },
+ 
   // 确定导航tab页，是否show nav
   showNav: path => {
     switch (path) {
@@ -56,12 +45,6 @@ var page = {
         page.scrollChatListDown(pos, initCount)
       }, 200)
     }
-  },
-  getChatListHeight: () => {
-    return document.getElementById('chat-list').scrollHeight
-  },
-  getChatListScroll: () => {
-    return document.getElementById('chat-list').scrollTop
   },
 }
 
