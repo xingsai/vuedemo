@@ -1,0 +1,37 @@
+/* 图片处理 */
+.img-style {
+    height : 100%;
+    width  : 100%;
+    display: block;
+}
+
+/* 超出显示... */
+.textOverflow {
+    word-break   : break-all;
+    text-overflow: ellipsis;
+    overflow     : hidden;
+    white-space  : nowrap;
+    min-width    : 0
+}
+
+/* 超出两行显示... */
+.textOverflow2 {
+    word-break        : break-all;
+    text-overflow     : ellipsis;
+    display           : -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow          : hidden;
+}
+
+/* 盒子居中设置 */
+
+.f-c-w {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.f-w{
+    display:flex;
+}
