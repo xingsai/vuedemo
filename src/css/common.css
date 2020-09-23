@@ -16,13 +16,16 @@
 
 /* 超出两行显示... */
 .textOverflow2 {
-    word-break        : break-all;
+    text-overflow     : -o-ellipsis-lastline;
+    overflow          : hidden;
     text-overflow     : ellipsis;
     display           : -webkit-box;
-    -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
-    overflow          : hidden;
-}
+    /*! autoprefixer: off */
+    line-clamp        : 2;
+    -webkit-box-orient: vertical;
+    word-break        : break-all;
+  }
 
 /* 盒子居中设置 */
 
