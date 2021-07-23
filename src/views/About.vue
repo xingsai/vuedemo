@@ -1,8 +1,31 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div>
+
   </div>
 </template>
-<style scoped>
+
+<script>
+//import xxxx from '@/components/xxxx.vue'
+export default {
+  name:"",
+  data(){
+    return{
+
+    }
+  },
+  components: {},
+  created(){
+
+  },
+  mounted(){
+
+  },
+  methods:{
+
+  }
+}
+</script>
+
+<style scoped lang="less">
 
 </style>
